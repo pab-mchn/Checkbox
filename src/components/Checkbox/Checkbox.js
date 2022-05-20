@@ -1,10 +1,13 @@
-import React from "react";
+import Characters from "../Characters/Characters";
+import Locations from "../Locations/Locations";
+import Episodes from "../Episodes/Episodes";
 import { useState } from "react";
 
 const Checkbox = () => {
   const [checkedCharacters, setCheckedCharacters] = useState(false);
   const [checkedLocations, setCheckedLocations] = useState(false);
   const [checkedEpisodes, setCheckedEpisodes] = useState(false);
+
   return (
     <>
       <form>
@@ -32,6 +35,9 @@ const Checkbox = () => {
         />
         <label htmlFor="episodes">Episodes</label>
       </form>
+      {checkedCharacters ? <Characters /> : ""}
+      {checkedLocations ? <Locations /> : ""}
+      {checkedEpisodes ? <Episodes /> : ""}
     </>
   );
 };
