@@ -6,7 +6,7 @@ function App() {
   return (
     <DataProvider>
       <div className="App">
-        <h1>hey bitch</h1>
+        <h1>Rick and Morty</h1>
         <Checkbox/>
       </div>
     </DataProvider>
