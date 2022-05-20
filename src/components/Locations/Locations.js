@@ -16,7 +16,7 @@ const Locations = () => {
           <div className="front-rotation">
             <img
               style={imageStyle}
-              src="https://imgs.search.brave.com/XJPkidVVtqmbaVYzrHRai7s9N8JjkmyJSNrV8offw40/rs:fit:487:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5C/WkFyNV9NakNudE9O/TExDUzlkUW5nSGFI/TiZwaWQ9QXBp"
+              src="https://imgs.search.brave.com/wILUng6YJYKR8apWmixqv28BALQyvojxZNe4NJezsA8/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC4y/ak04ZmpNaXR5TU43/anVLbC1mcWh3SGFF/SyZwaWQ9QXBp"
               alt=""
             />
             <h3>{locations.name}</h3>
