@@ -4,7 +4,7 @@ import Episodes from "../Episodes/Episodes";
 import { useState } from "react";
 
 const Checkbox = () => {
-  const [checkedCharacters, setCheckedCharacters] = useState(false);
+  const [checkedCharacters, setCheckedCharacters] = useState(true);
   const [checkedLocations, setCheckedLocations] = useState(false);
   const [checkedEpisodes, setCheckedEpisodes] = useState(false);
 
