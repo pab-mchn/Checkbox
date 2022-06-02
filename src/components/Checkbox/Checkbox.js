@@ -4,7 +4,7 @@ import Episodes from "../Episodes/Episodes";
 import { useState } from "react";
 
 const Checkbox = () => {
-  const [checkedCharacters, setCheckedCharacters] = useState(true);
+  const [checkedCharacters, setCheckedCharacters] = useState(false);
   const [checkedLocations, setCheckedLocations] = useState(false);
   const [checkedEpisodes, setCheckedEpisodes] = useState(false);
 
@@ -12,29 +12,38 @@ const Checkbox = () => {
     <>
       <form>
         <input
-          type="checkbox"
-          name="characters"
+          type='checkbox'
+          name='characters'
           checked={checkedCharacters}
           onChange={(e) => setCheckedCharacters(e.target.checked)}
         />
-        <label htmlFor="characters">Characters</label>
+        <label htmlFor='characters'>Characters</label>
 
         <input
-          type="checkbox"
-          name="locations"
+          type='checkbox'
+          name='locations'
           checked={checkedLocations}
           onChange={(e) => setCheckedLocations(e.target.checked)}
         />
-        <label htmlFor="locations">Locations</label>
+        <label htmlFor='locations'>Locations</label>
 
         <input
-          type="checkbox"
-          name="episodes"
+          type='checkbox'
+          name='episodes'
           checked={checkedEpisodes}
           onChange={(e) => setCheckedEpisodes(e.target.checked)}
         />
-        <label htmlFor="episodes">Episodes</label>
+        <label htmlFor='episodes'>Episodes</label>
       </form>
+      {checkedCharacters === true ||
+      checkedLocations === true ||
+      checkedEpisodes === true ? (
+        ""
+      ) : (
+        <>
+          <Characters /> <Locations /> <Episodes />
+        </>
+      )}
       {checkedCharacters ? <Characters /> : ""}
       {checkedLocations ? <Locations /> : ""}
       {checkedEpisodes ? <Episodes /> : ""}

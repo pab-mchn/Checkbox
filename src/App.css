@@ -1,7 +1,10 @@
 .App {
   text-align: center;
 }
-
+form {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
 .rotation {
   background-color: transparent;
   width: 300px;
